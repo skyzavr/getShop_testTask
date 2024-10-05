@@ -1,0 +1,28 @@
+:root {
+  /* desktop */
+  --typo-header-desktop: bold 80px/110% Onest;
+  --typo-header1-desktop: bold 32px/120% Onest;
+  --typo-header2-bold-desktop: bold 24px/32% Onest;
+  --typo-header2-regular-desktop: regular 24px/32% Onest;
+  --typo-button-desktop: regular 14px/24% Onest;
+  --typo-body1-desktop: regular 22px/32% Onest;
+  --typo-body2-desktop: regular 18px/22% Onest;
+  --typo-body3-desktop: regular 14px/20% Onest;
+
+  /* tablet */
+  --typo-header1-tablet: bold 52px/110% Onest;
+  --typo-header2-bold-tablet: bold 28px/120% Onest;
+  --typo-header3-bold-tablet: bold 16px Onest;
+  --typo-button-tablet: medium 14px/24% Onest;
+  --typo-body1-regular-tablet: regular 14px/20% Onest;
+  --typo-body1-bold-tablet: bold 14px/20% Onest;
+  --typo-body2-tablet: regular 12px/16% Onest;
+
+  /* mobile */
+  --typo-header1-mobile: bold 36px/110% Onest;
+  --typo-header2-mobile: bold 24px Onest;
+  --typo-header3-mobile: bold 20px Onest;
+  --typo-button-mobile: medium 14px/24% Onest;
+  --typo-body1-mobile: regular 16px Onest;
+  --typo-body1-mobile: regular 14px Onest;
+}

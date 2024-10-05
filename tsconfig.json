@@ -13,7 +13,12 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@app/*": ["./src/pages/*"],
+      "@widgets/*": ["./src/pages/widgets/*"],
+      "@entities/*": ["./src/pages/entities/*"],
+      "@features/*": ["./src/pages/features/*"],
+      "@shared/*": ["./src/pages/shared/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

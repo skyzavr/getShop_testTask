@@ -1,0 +1,37 @@
+.button {
+  font: var(--typo-button-desktop);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+.button,
+.button:hover {
+  transition: var(--transition-all-03-EIO);
+}
+.orange {
+  background-color: var(--orange);
+}
+.orange:hover {
+  background-color: var(--dark-orange);
+}
+.black {
+  background-color: var(--black);
+}
+.black:hover {
+  background-color: var(--gray-01);
+}
+.disabled {
+  background-color: var(--gray-02);
+  color: var(--gray-01);
+}
+
+@media (min-width: 320px) {
+  .button {
+    width: 100%;
+  }
+}
+@media (min-width: 1080px) {
+  .button {
+    width: auto;
+  }
+}

@@ -1,0 +1,15 @@
+.link {
+  color: var(--black);
+  font: var(--typo-button-desktop);
+  transition: var(--transition-color-03-EIO);
+}
+.link:hover {
+  color: var(--orange);
+  cursor: pointer;
+  transition: var(--transition-color-03-EIO);
+}
+.link:active {
+  color: var(--orange);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

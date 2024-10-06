@@ -1,0 +1,27 @@
+.tabsWrapper {
+  background-color: var(--gray-04);
+  padding: 4px;
+  width: auto;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 320px) {
+  .tabsWrapper {
+    min-width: 288px;
+  }
+}
+
+@media (min-width: 768px) {
+  .tabsWrapper {
+    min-width: 336px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tabsWrapper {
+    min-width: 560px;
+  }
+}

@@ -6,6 +6,7 @@
   border: 1px solid var(--gray-01);
   background-color: transparent;
   transition: var(--transition-all-03-EIO);
+  resize: none;
 }
 .textArea::placeholder,
 .textArea:focus,

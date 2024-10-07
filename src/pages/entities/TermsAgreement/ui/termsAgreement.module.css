@@ -1,0 +1,30 @@
+.termsWrapper {
+  color: var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.termsText {
+  padding-left: 10px;
+}
+
+.sideLink:hover {
+  cursor: pointer;
+  color: var(--orange);
+}
+@media (min-width: 320px) {
+  .termsText {
+    font: var(--typo-body2-mobile);
+  }
+}
+@media (min-width: 768px) {
+  .termsText {
+    font: var(--typo-body1-regular-table);
+  }
+}
+@media (min-width: 1280px) {
+  .termsText {
+    font: var(--typo-body3-desktop);
+  }
+}

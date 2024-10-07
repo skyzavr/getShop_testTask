@@ -30,7 +30,7 @@
     width: 100%;
   }
 }
-@media (min-width: 1080px) {
+@media (min-width: 1280px) {
   .button {
     width: auto;
   }

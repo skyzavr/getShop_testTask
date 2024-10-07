@@ -1,0 +1,33 @@
+.wrapper input[type='checkbox'] {
+  /* removing default appearance */
+  -webkit-appearance: none;
+  appearance: none;
+  /* creating a custom design */
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition-all-03-EIO);
+}
+.wrapper input[type='checkbox']:hover {
+  border-color: var(--orange);
+  transition: var(--transition-all-03-EIO);
+}
+.unchecked {
+  border: 1px solid var(--gray-01);
+}
+.checked {
+  background-color: var(--orange);
+  border: 1px solid transparent;
+  position: relative;
+}
+.checked::before {
+  content: '';
+  width: 9px;
+  height: 7px;
+  background-image: url('/images/icons/sign.svg');
+  position: absolute;
+  right: 1px;
+  top: 3px;
+}

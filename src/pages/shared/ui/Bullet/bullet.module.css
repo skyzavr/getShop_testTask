@@ -1,0 +1,32 @@
+.icon {
+  background-color: var(--orange);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 14px;
+}
+
+@media (min-width: 320px) {
+  .icon {
+    max-width: 18px;
+    height: 18px;
+    width: 100%;
+  }
+  .icon > img {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .icon {
+    max-width: 24px;
+    height: 24px;
+    width: 100%;
+  }
+  .icon > img {
+    width: 8px;
+    height: 8px;
+  }
+}

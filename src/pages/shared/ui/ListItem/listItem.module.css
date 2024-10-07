@@ -1,0 +1,25 @@
+.itemWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.text {
+  color: var(--black);
+}
+
+@media (min-width: 320px) {
+  .text {
+    font: var(--typo-body2-mobile);
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .text {
+    font: var(--typo-body1-regular-tablet);
+  }
+}
+@media (min-width: 1280px) {
+  .text {
+    font: var(--typo-body1-desktop);
+  }
+}

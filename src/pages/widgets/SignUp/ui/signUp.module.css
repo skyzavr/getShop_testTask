@@ -1,0 +1,47 @@
+.signUpForm {
+  display: flex;
+}
+.contactInfoField {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contactInfoField input {
+  width: 100%;
+}
+@media (min-width: 320px) {
+  .signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .contactInfoField {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    min-height: 200px;
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .signUpForm {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .contactInfoField {
+    margin-top: 0;
+  }
+  .textAreaField,
+  .contactInfoField {
+    width: 100%;
+    max-width: 560px;
+  }
+  .contactInfoField > :only-child {
+    width: 100%;
+  }
+  .contactInfoField > button {
+    width: 100%;
+  }
+}

@@ -22,7 +22,7 @@ export const TextArea = (props: textAreaProps) => {
 
   useEffect(() => {
     if (debounce) onSetText(debounce);
-  }, [debounce, onSetText]);
+  }, [debounce]);
 
   return (
     <textarea

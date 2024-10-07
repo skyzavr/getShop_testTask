@@ -9,7 +9,7 @@ import classes from './input.module.css';
 type inputProps = {
   type: 'text';
   placeholder: string;
-  SetValueHandler: (data: string) => void;
+  SetValueHandler: (data: { error: boolean; value: string }) => void;
   isDataCorrect: (data: string) => boolean;
 };
 
@@ -26,8 +26,9 @@ export const Input = (inputProps: inputProps) => {
     setIsError(false);
   };
   const onValidateHandler = (value: string) => {
-    if (isDataCorrect(value)) return SetValueHandler(value);
-    setIsError(true);
+    const isCorrectData = isDataCorrect(value);
+    setIsError(!isCorrectData);
+    return SetValueHandler({ error: !isCorrectData, value });
   };
 
   useEffect(() => {

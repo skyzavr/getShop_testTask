@@ -1,0 +1,42 @@
+.scrollBtn {
+  color: var(--gray-01);
+  font: var(--typo-body1-regular-tablet);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+
+.scrollBtn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--orange);
+}
+.scrollBtn > svg {
+  margin-left: 5px;
+}
+
+.scrollBtn > svg path {
+  cursor: pointer;
+  fill: var(--gray-01);
+}
+.scrollBtn:hover > svg {
+  transform: rotateZ(-45deg);
+}
+.scrollBtn:hover > svg path {
+  fill: var(--orange);
+}
+
+.scrollBtn,
+.scrollBtn:hover,
+.scrollBtn > svg path,
+.scrollBtn:hover > svg path {
+  transition: var(--transition-color-03-EIO);
+}
+
+.scrollBtn > svg,
+.scrollBtn:hover > svg {
+  transition: var(--transition-transform-03-EI);
+}

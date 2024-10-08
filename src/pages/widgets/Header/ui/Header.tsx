@@ -1,14 +1,23 @@
 import { useEffect, useState } from 'react';
+import classNames from 'classnames';
 
 import { Link, MenuButton } from '@shared/ui';
 import { CloseBackground } from './CloseBackgroundHelper';
+import { linkList } from '../model/linksList';
 
 import classes from './header.module.css';
 
-export const Header = () => {
+type HeaderProps = {
+  screen: string;
+  navTo: (key: string) => void;
+};
+
+export const Header = ({ screen, navTo }: HeaderProps) => {
   const [showMenu, setShowMenu] = useState(false);
   const [menuClass, setMenuClass] = useState<string>(classes.none);
   const [isDocument, setIsDocument] = useState(false);
+
+  const navigateToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   const toggleMenu = () => {
     if (!showMenu) document.body.style.overflow = 'hidden';
@@ -17,7 +26,16 @@ export const Header = () => {
   };
 
   const onUpdateHeaderStyles = () =>
-    setMenuClass(window.scrollY > 300 ? classes.fixed : classes.none);
+    setMenuClass(window.scrollY > 100 ? classes.fixed : classes.none);
+
+  const navMenuClasses = classNames(
+    classes.navMenu,
+    showMenu ? classes.showMenu : ''
+  );
+  const navigateToBlock = (id: string) => {
+    if (showMenu) toggleMenu();
+    navTo(id);
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', onUpdateHeaderStyles);
@@ -34,19 +52,16 @@ export const Header = () => {
     <>
       <header className={`${classes.header} ${menuClass}`}>
         <nav className={classes.wrapper}>
-          <a href="#" className={classes.logo}>
+          <a className={classes.logo} onClick={navigateToTop}>
             Logo
           </a>
-          <div
-            className={`${classes.navMenu} ${showMenu ? classes.showMenu : ''}`}
-          >
+          <div className={navMenuClasses}>
             <ul className={classes.navList}>
-              <li className={classes.navItem}>
-                <Link>Преимущества</Link>
-              </li>
-              <li className={classes.navItem}>
-                <Link>Как мы работаем</Link>
-              </li>
+              {linkList.map(({ child, id }) => (
+                <li key={id} onClick={() => navigateToBlock(id)}>
+                  <Link isActive={screen === id}>{child}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <MenuButton onToggle={toggleMenu} isOpen={showMenu} />

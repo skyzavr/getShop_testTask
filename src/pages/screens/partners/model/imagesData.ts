@@ -1,4 +1,9 @@
-type imgList = { [key: string]: string | number };
+type imgList = {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
 
 export const images: imgList[] = [
   {

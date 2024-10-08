@@ -1,0 +1,5 @@
+:root {
+  --transition-all-03-EIO: all 0.3s ease-in-out;
+  --transition-color-03-EIO: color 0.3s ease-in-out;
+  --transition-transform-03-EI: transform 0.3s ease-in;
+}

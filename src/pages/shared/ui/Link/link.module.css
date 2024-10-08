@@ -8,7 +8,8 @@
   cursor: pointer;
   transition: var(--transition-color-03-EIO);
 }
-.link:active {
+.link:active,
+.active {
   color: var(--orange);
   text-decoration: underline;
   text-underline-offset: 2px;

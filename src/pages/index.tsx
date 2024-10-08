@@ -2,11 +2,12 @@ import { useState, createRef } from 'react';
 import Head from 'next/head';
 
 import { Header } from '@widgets/Header';
-import { screens } from './api/screens';
+
 import { Scroll } from '@features/Scroll';
 import { ObserverWrapper } from '@shared/ui';
+import { screens } from '@app/component/api/screens';
 
-export const Home = () => {
+const Home = () => {
   const [activeBlock, setActiveBlock] = useState<string>('');
   const params = { screen: activeBlock, setScreen: setActiveBlock };
 

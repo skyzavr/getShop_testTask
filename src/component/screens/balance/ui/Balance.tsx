@@ -1,5 +1,5 @@
-import { BalanceCard } from '@/pages/entities/BalanceCard';
-import { BalanceView } from '@/pages/entities/BalanceView';
+import { BalanceCard } from '@entities/BalanceCard';
+import { BalanceView } from '@entities/BalanceView';
 
 import classes from './balance.module.css';
 export const Balance = () => {

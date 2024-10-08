@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { List } from '@/pages/entities/List';
+import { List } from '@entities/List';
 import { Button } from '@shared/ui';
 
 import classes from './record.module.css';

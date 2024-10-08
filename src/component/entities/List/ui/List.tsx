@@ -1,4 +1,4 @@
-import { ListItem } from '@/pages/shared/ui';
+import { ListItem } from '@shared/ui';
 
 import classes from './list.module.css';
 

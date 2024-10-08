@@ -18,7 +18,8 @@
       "@widgets/*": ["./src/pages/widgets/*"],
       "@entities/*": ["./src/pages/entities/*"],
       "@features/*": ["./src/pages/features/*"],
-      "@shared/*": ["./src/pages/shared/*"]
+      "@shared/*": ["./src/pages/shared/*"],
+      "@screens/*": ["./src/pages/screens/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

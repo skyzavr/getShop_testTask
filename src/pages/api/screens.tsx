@@ -11,7 +11,7 @@ type screens = { component: ReactNode; id: string; key: string }[];
 export const screens: screens = [
   {
     component: <MainScreen />,
-    id: '',
+    id: 'mainScreen',
     key: 'mainScreen',
   },
   {
@@ -21,8 +21,8 @@ export const screens: screens = [
   },
   {
     component: <Partners />,
-    id: '',
-    key: 'Partners',
+    id: 'partners',
+    key: 'partners',
   },
   {
     component: <Record />,
@@ -31,7 +31,7 @@ export const screens: screens = [
   },
   {
     component: <SignUpForm />,
-    id: '',
+    id: 'signUpForm',
     key: 'signUpForm',
   },
 ];
